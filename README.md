@@ -4,8 +4,8 @@
 
 ## Screenshot
 
-![Screenshot_1]()
-![Screenshot_2]()
+![Screenshot_1](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
+![Screenshot_2](Screenshot/Screen%20Shot%202020-01-25%20at%2011.07.59.png)
   
 
 ## Specs
