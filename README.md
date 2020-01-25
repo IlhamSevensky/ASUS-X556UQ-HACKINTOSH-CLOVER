@@ -2,10 +2,10 @@
 
 # Asus A556U (X556UQ) - Mojave Hackintosh
 
-  
-⚠️ **Unmaintained, as I don't have this laptop anymore.**
+## Screenshot
 
-Forks are welcome.
+![Screenshot_1]()
+![Screenshot_2]()
   
 
 ## Specs
@@ -32,7 +32,7 @@ Memory | 12 GB DDR4 2133 Mhz
 
   
 
-Storage | Silicon Power 256 GB SSD
+Storage | Silicon Power 240 GB SSD
 
   
 
