@@ -113,26 +113,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #1 (Thinkpad)</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>UENJMFZJRF8=</data>
-					<key>Replace</key>
-					<data>UENJMElHUFU=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change PCI0.VID to IGPU #2 (Thinkpad)</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>VklEXwhfQURSDAAAAgA=</data>
-					<key>Replace</key>
-					<data>SUdQVQhfQURSDAAAAgA=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change B0D3 to HDAU</string>
 					<key>Disabled</key>
 					<false/>
@@ -313,8 +293,10 @@
 		</array>
 		<key>Audio</key>
 		<dict>
+			<key>AFGLowPowerState</key>
+			<false/>
 			<key>Inject</key>
-			<string>Detect</string>
+			<string>No</string>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -473,7 +455,7 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleRTC</key>
-		<true/>
+		<false/>
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>ForceKextsToLoad</key>

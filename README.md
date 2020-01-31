@@ -1,391 +1,176 @@
-  
+# ASUS A556U (X556UQ) - Hackintosh Mojave 10.14.6
 
-# Asus A556U (X556UQ) - Mojave Hackintosh
+---
 
-## Screenshot
+### Screenshot
 
-![Screenshot_1](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
-![Screenshot_2](Screenshot/Screen%20Shot%202020-01-25%20at%2011.07.59.png)
-  
+---
 
-## Specs
+[screenshot_1](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
 
-  
+[screenshot_2](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
 
-  
+[screenshot_3](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
 
-Processor | Intel Core i5-6200U CPU (SkyLake)
+[screenshot_4](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
 
-  
+[screenshot_5](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
 
-  
+### Technical Specifications
 
-Video | Integrated Intel HD 520 + Nvidia GTX 940MX
+---
 
-  
+| Processor         | Intel Core i5 - 6200U                                                                                                                    |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Memory            | 1x 4 GB DDR4 2133 Mhz + 1x 8 GB DDR4 2133 Mhz                                                                                            |
+| Storage           | SSD M.2 SATA Silicon Power 240 GB                                                                                                        |
+| Video             | Integrated Intel HD 520 + NVIDIA 940MX                                                                                                   |
+| Wi-Fi             | Qualcomm Atheros 9565                                                                                                                    |
+| Ethernet          | Realtek RTL8111                                                                                                                          |
+| Audio             | Realtek ALC255                                                                                                                           |
+| Touchpad          | ELAN 1000 I2C Interface                                                                                                                  |
+| Screen Size       | 15,6 Inch                                                                                                                                |
+| Screen Resolution | 1920 x 1080                                                                                                                              |
+| Others            | 1x Card Reader, 1x WebCam, 1x VGA Port, 1x HDMI, 1x Combo Audio Jack, 1x USB 2.0, 1x USB 3.0 Type A, 1x USB 3.0 Type C, 1x Optical Drive |
 
-  
+### What Works Well
 
-Memory | 12 GB DDR4 2133 Mhz 
+---
 
-  
+✅ Intel HD 520 (With QE/CI)
 
-  
+✅ All USB Port
 
-Storage | Silicon Power 240 GB SSD
-
-  
-
-  
-
-Connectivity | Wireless AC Atheros ATH9565 / QCA 9565 Bluetooth, RTL8111/8168/8411 PCI Express Gigabit Ethernet, Bluetooth 4.0
-
-  
-
-  
-
-Audio | Realtek ALC255
-
-  
-
-  
-
-Ports | 1x USB 2.0, 1x USB 3.0, 1x USB 3.1, HDMI, COMBO audio jack, SD card reader, LAN, VGA Port
-
-  
-
-  
-
-TouchPad | Elan Touchpad (ELAN1000)
-
-  
-
-  
-
-# What works
-
-  
-
-  
-
-✅ Intel HD 520 (with QE/CI)
-
-  
-
-  
-
-  
-
-✅ VGA/HDMI (Audio + Video)
-
-  
-
-  
-
-  
-
-✅ All USB Type A ports
-
-  
-
-  
-
-  
-
-✅ USB type C port
-
-  
-
-  
-
-  
+✅ VGA Port
 
 ✅ Keyboard
 
-  
-
-  
-
-  
-
-✅ Touchpad with all gesture provided by Voodooi2C
-
-  
-
-  
-
-  
-
-✅ Internal screen backlight change
-
-  
-
-  
-
-  
+✅ Touchpad
 
 ✅ Onboard Ethernet
 
-  
-
-  
-
-  
-
 ✅ Wi-Fi
 
-  
+✅ Webcam
 
-  
+✅ Battery Status
 
-  
+✅ FN Keys (Almost all key working)
 
-✅ UVC HD Webcam
+✅ Native Power Management
 
-  
+✅ Optical Drive
 
-  
+### What Works (with Notes)
 
-  
+---
 
-⚠️ Speaker + Headphone jack (auto detection) but internal microphone and headphone microphone (manual switch)
-
-  
-
-  
-
-  
-
-✅ Laptop lid
-
-  
-
-  
-
-  
-
-✅ Native power managment
-
-  
-
-  
-
-  
-
-✅ Battery status
-
-  
-
-  
-
-✅ ️Sleep (takes a bit for going completely into sleep mode, but it works!)
-
-  
-
-  
+⚠️ Audio (Internal mic does not work)
 
 ⚠️ Bluetooth (Boot to Windows/Linux/VM to load firmware)
 
+⚠️ Restart, Sleep, Shutdown (Sleep with Apple Logo Menu and FN + F1 works fine, but on close and open LID the screen is turned off but the laptop engine and LED indicator are still on and when wake up its open login screen again)
+
+### Does Not Work
+
+---
+
+❌ NVIDIA 940MX (Optimus - impossible to get working at the moment)
+
+❌ iMessage (TODO fix)
+
+❌ FaceTime (TODO fix)
+
+### Not Tested
+
+---
+
+1. SD Card Reader
+
+2. HDMI
+
+### Kexts List
+
+---
+
+- **CLOVER/Kext/Other**
   
-
+  [Lilu](https://github.com/acidanthera/Lilu)
   
-
-⚠️ FN Keys (brightness and volume control works - FN+F9 for disabling the touchpad does not work, sleep with FN+F1 crashes the system)
-
+  [AppleALC](https://github.com/acidanthera/AppleALC)
   
-
+  [AsusSMC (Need Patch DSDT/SSDT)](https://github.com/hieplpvip/AsusSMC)
   
-
+  [CPUFriend](https://github.com/acidanthera/CPUFriend)
   
-
-❌ Realtek SD card reader
-
+  [HibernationFixup](https://github.com/acidanthera/HibernationFixup)
   
-
+  NoTouchID
   
-
+  [RealtekRTL8111](https://bitbucket.org/RehabMan/os-x-realtek-network/downloads/)
   
-
-❌ NVIDIA GeForce 940MX (Optimus - impossible to get working at the moment)
-
+  [RTCMemoryFixup](https://github.com/acidanthera/RTCMemoryFixup)
   
-
+  [USBInjectAll (Need Patch DDST/SSDT)](https://bitbucket.org/RehabMan/os-x-usb-inject-all/downloads/)
   
-
-# BIOS/Firmware
-**After my long testing I have concluded that the version 313 works just fine for this hackintosh.**
-
-Versions 314 and 315 **DO NOT WORK**. 
-There are some strange unknown problems with the Intel graphics card.
-
-If you upgraded the BIOS, or Windows Update did that for you, **you should downgrade** or you might encounter some strange problems.
-
-You can find the 313 version it in this repository (BIOS folder) or on the [ASUS website](https://www.asus.com/supportonly/F556UQ/HelpDesk_BIOS/)
-
-**WARNING**: Please **make sure** that your computer model is **X556UQK (F556U)** **BEFORE** flashing the BIOS. 
-If something goes wrong it's not my fault.
-
-# Kexts list
-
+  [VirtualSMC + All Plugins](https://github.com/acidanthera/VirtualSMC)
   
-
+  [VoodooPS2Controller](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
   
+  [WhateverGreen](https://github.com/acidanthera/WhateverGreen)
 
-#### Install into your CLOVER/kext/Other folder:
-
+- **Library/Extensions**
   
+  [VoodooI2C + VoodooI2CELAN (Need GPIO Pinning)](https://github.com/alexandred/VoodooI2C)
 
+- **System/Library/Extensions (Backup original file first)**
   
-
-[Lilu](https://github.com/acidanthera/Lilu)
-
+  IO80211Family.kext (For ATH9565)
   
-
+  corecrypto.kext
   
+  corecapture.kext
 
+### SSDT/DSDT Patches
+
+---
+
+- [syn] Rename _DSM methods to XSDM
+
+- [audio] Audio Layout 27 (edited from other audio patch)
+
+- [bat] ASUS N55SL/VivoBook
+
+- [igpu] Brightness fix
+
+- [usb] USB3 _PRW 0x0D Skylake (instant wake)
+
+- [sys] SMBUS Fix
+
+- [sys] IRQ Fix
+
+- [sys] HPET Fix
+
+- [sys] Fix Mutex with non-zero SyncLevel
+
+### Additional DSDT/SSDT Patches for kext and other fix
+
+- VoodooI2C + VoodooI2CELAN
   
+  [Follow this tutorial](https://voodooi2c.github.io/#Installation/Installation)
 
-[RealtekRTL8111](https://github.com/Mieze/RTL8111_driver_for_OS_X)
-
+- AsusSMC
   
+  [Follow this tutorial](https://github.com/hieplpvip/AsusSMC/wiki/Installation-Instruction)
 
-[WhateverGreen](https://github.com/acidanthera/WhateverGreen)  
-
+- Disable DGPU
   
+  [Follow this tutorial](https://www.insanelymac.com/forum/topic/295584-disabling-nvidia-optimus-card-on-all-laptops/)
 
-[VirtualSMC](https://github.com/acidanthera/VirtualSMC)
-
+- USBInjectAll
   
+  [Follow hackintool USB Port Patching](https://www.tonymacx86.com/threads/release-hackintool-v2-8-6.254559/)
 
-  
-
-  
-
-[AppleALC](https://github.com/acidanthera/AppleALC)
-
-  
-
-  
-
-[ATH9KFixup.kext](https://github.com/black-dragon74/ATH9KFixup)
-
-  
-  
-
-[CPUFriend](https://github.com/acidanthera/CPUFriend)
-
-  
-  
-  
-[HibernationFixup](https://github.com/acidanthera/HibernationFixup)
-
-
-
-
-[VoodooPS2Controller](https://bitbucket.org/RehabMan/os-x-voodoo-ps2-controller/downloads/)
-
-
-#### Install in /Library/Extensions:
-
-  
-
-  
-
-[VoodooI2C + VoodooI2CELAN (Need Patch DSDT)](https://github.com/alexandred/VoodooI2C)
-
-
-  
-
-  
-
-#### Install in /System/Library/Extensions (Backup original file first):
-
-[ATH9KInjector.kext](https://github.com/black-dragon74/ATH9KFixup)
-
-
-
-[IO80211Family.kext]()
-
-[corecrypto.kext]()
-
-[corecapture.kext]()
-
-
-## DSDT/SSDT patches
-
-**DO NOT ASK** or **ATTEMPT** to use existing AML files. DSDT and SSDT tables can be different even on the same model.
-
-
-[Extract your DSDT/SSDTs](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/), modify the files as needed, compile and save your new AML files into CLOVER/ACPI/patched.
-
-You could also check out check out CLOVER/ACPI/**patched_dsl** for working examples.
-**hint**: use **diff** for finding out the main differences.
-
-  
-### Required patches (applied with MaciASL):
-
-  
-
-**_RehabMan Laptop Repo**
-
-  
-
-  
-
--  [syn] Fix PARSEOP_ZERO Error (aggressive)
-
-  
-
-  
-
--  [bat] ASUS N55SL-Vivobook
-
-  
-
-  
-
-  
-
-**_VoodooI2C-Patches Repo**
-
-  
-
-  
-
-- Windows 10 Patch
-
-  
-
-  
-
-  
-
-- "custom made patch" (check out Scope (_SB.PCI0.I2C1) - Device (**ETPD**) from the DSL example)
-
-  
-
-  
-
-## And now?
-After creating the proper DSDT file everything should work out of the box using the Clover **config.plist** available here in the repo.
-
-If you want to know what are the modifications needed for making everything function you can check the "i know what I'm doing section" :)
-
-#### i know what I'm doing 
--  *AUDIO*: Clover ACPI Fixes (FixHPET, FixIPIC, FixRTC, FixTMR) and layout-id 27.
-
-- *BRIGHTNESS*: ACPI->AddPNLF, Devices->SetIntelBacklight and SetIntelMaxBacklight
-
-- *Wi-FI*: "-ath9565" as boot flag
-
--  *TOUCHPAD*: DSDT custom patch (0x55 pinout) along with dynamic KextPatch for disabling AppleIntelLpsss
-
-  
-
-# Credits
-
-  
-
-  
+### Credits
 
 Thanks to everyone who made this possibile: RehabMan, alexandred, black-dragon74, Mieze, acidanthera, every contributor to the repos/guides and the whole Hackintosh community.
