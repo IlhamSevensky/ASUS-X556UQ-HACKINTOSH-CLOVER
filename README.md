@@ -6,15 +6,17 @@
 
 ---
 
-[screenshot_1](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
+[](Screenshot/Screen%20Shot%202020-02-01%20at%2001.09.34.png)
 
-[screenshot_2](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
+[](Screenshot/Screen%20Shot%202020-02-01%20at%2001.10.23.png)
 
-[screenshot_3](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
+[](Screenshot/Screen%20Shot%202020-02-01%20at%2001.15.49.png)
 
-[screenshot_4](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
+[](Screenshot/Screen%20Shot%202020-02-01%20at%2001.16.55.png)
 
-[screenshot_5](Screenshot/Screen%20Shot%202020-01-25%20at%2011.01.22.png)
+[](Screenshot/Screen%20Shot%202020-02-01%20at%2001.18.23.png)
+
+
 
 ### Technical Specifications
 
@@ -61,6 +63,8 @@
 
 ✅ Optical Drive
 
+
+
 ### What Works (with Notes)
 
 ---
@@ -70,6 +74,8 @@
 ⚠️ Bluetooth (Boot to Windows/Linux/VM to load firmware)
 
 ⚠️ Restart, Sleep, Shutdown (Sleep with Apple Logo Menu and FN + F1 works fine, but on close and open LID the screen is turned off but the laptop engine and LED indicator are still on and when wake up its open login screen again)
+
+
 
 ### Does Not Work
 
@@ -81,6 +87,8 @@
 
 ❌ FaceTime (TODO fix)
 
+
+
 ### Not Tested
 
 ---
@@ -88,6 +96,8 @@
 1. SD Card Reader
 
 2. HDMI
+   
+   
 
 ### Kexts List
 
@@ -131,6 +141,8 @@
   
   corecapture.kext
 
+
+
 ### SSDT/DSDT Patches
 
 ---
@@ -153,6 +165,8 @@
 
 - [sys] Fix Mutex with non-zero SyncLevel
 
+
+
 ### Additional DSDT/SSDT Patches for kext and other fix
 
 - VoodooI2C + VoodooI2CELAN
@@ -170,6 +184,8 @@
 - USBInjectAll
   
   [Follow hackintool USB Port Patching](https://www.tonymacx86.com/threads/release-hackintool-v2-8-6.254559/)
+
+
 
 ### Credits
 
