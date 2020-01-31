@@ -16,12 +16,15 @@
 
 ![](Screenshot/Screen%20Shot%202020-02-01%20at%2001.18.23.png)
 
+
+
 ### Technical Specifications
 
 ---
 
-| Processor         | Intel Core i5 - 6200U                                                                                                                    |
+| Name              | Specifications                                                                                                                           |
 | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Processor         | Intel Core i5 - 6200U                                                                                                                    |
 | Memory            | 1x 4 GB DDR4 2133 Mhz + 1x 8 GB DDR4 2133 Mhz                                                                                            |
 | Storage           | SSD M.2 SATA Silicon Power 240 GB                                                                                                        |
 | Video             | Integrated Intel HD 520 + NVIDIA 940MX                                                                                                   |
@@ -61,6 +64,8 @@
 
 ✅ Optical Drive
 
+
+
 ### What Works (with Notes)
 
 ---
@@ -70,6 +75,8 @@
 ⚠️ Bluetooth (Boot to Windows/Linux/VM to load firmware)
 
 ⚠️ Restart, Sleep, Shutdown (Sleep with Apple Logo Menu and FN + F1 works fine, but on close and open LID the screen is turned off but the laptop engine and LED indicator are still on and when wake up its open login screen again)
+
+
 
 ### Does Not Work
 
@@ -81,6 +88,8 @@
 
 ❌ FaceTime (TODO fix)
 
+
+
 ### Not Tested
 
 ---
@@ -88,6 +97,8 @@
 1. SD Card Reader
 
 2. HDMI
+
+
 
 ### Kexts List
 
@@ -131,6 +142,8 @@
   
   corecapture.kext
 
+
+
 ### SSDT/DSDT Patches
 
 ---
@@ -153,6 +166,8 @@
 
 - [sys] Fix Mutex with non-zero SyncLevel
 
+
+
 ### Additional DSDT/SSDT Patches for kext and other fix
 
 - VoodooI2C + VoodooI2CELAN
@@ -170,6 +185,8 @@
 - USBInjectAll
   
   [Follow hackintool USB Port Patching](https://www.tonymacx86.com/threads/release-hackintool-v2-8-6.254559/)
+
+
 
 ### Credits
 
