@@ -26,7 +26,7 @@
 | Memory            | 1x 4 GB DDR4 2133 Mhz + 1x 8 GB DDR4 2133 Mhz                                                                                            |
 | Storage           | SSD M.2 SATA Silicon Power 240 GB                                                                                                        |
 | Video             | Integrated Intel HD 520 + NVIDIA 940MX                                                                                                   |
-| Wi-Fi             | Qualcomm Atheros 9565                                                                                                                    |
+| Wi-Fi + Bluetooh  | Qualcomm Atheros 9565                                                                                                                    |
 | Ethernet          | Realtek RTL8111                                                                                                                          |
 | Audio             | Realtek ALC255                                                                                                                           |
 | Touchpad          | ELAN 1000 I2C Interface                                                                                                                  |
