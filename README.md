@@ -1,3 +1,7 @@
+# This repo is no longer maintained
+moved to [here](https://github.com/IlhamSevensky/ASUS-X556UQ-HACKINTOSH-OPENCORE)
+
+---
 # ASUS A556U (X556UQ) - Hackintosh Mojave 10.14.6
 
 ---
